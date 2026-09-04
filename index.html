@@ -3,36 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Benjamin Taylor - Information Systems & Analytics student with a Cyber Risk Concentration at Louisiana State University. Experienced in IT security, IAM, Splunk, SQL, and NIST risk assessments.">
-  <title>Benjamin Taylor | IS &amp; Cyber Risk Portfolio</title>
+  <meta name="description" content="Benjamin Taylor - Information Systems & Analytics student with a Cyber Risk Concentration at Louisiana State University. Enterprise systems, security monitoring, SQL, and NIST risk assessments.">
+  <title>Benjamin Taylor | Information Systems &amp; Cyber Risk Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation Header -->
-  <header class="site-header" id="main-header">
+  <!-- Ambient Technical Background -->
+  <div class="ps-ambient-bg" aria-hidden="true">
+    <div class="ps-wave-ribbon"></div>
+    <div class="ps-grid-lines"></div>
+  </div>
+
+  <!-- Top System Bar -->
+  <header class="ps-system-bar" id="main-header">
     <div class="container">
-      <a href="index.html" class="logo" id="brand-logo" aria-label="Benjamin Taylor Portfolio">
-        <span class="logo-badge">BT</span>
-        <div>
-          <span>Benjamin Taylor</span>
-          <span class="logo-sub">LSU &bull; IS &amp; Cyber Risk</span>
+      <div class="ps-console-brand">
+        <a href="index.html" class="ps-logo-chip" aria-label="Benjamin Taylor Home">BT</a>
+        <div class="ps-brand-text">
+          <span class="ps-brand-name">Benjamin Taylor</span>
+          <span class="ps-brand-badge">LSU &bull; Information Systems</span>
         </div>
-      </a>
+      </div>
 
       <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="#profile" class="nav-link active" id="nav-profile">Profile</a></li>
-          <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
-          <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
-          <li><a href="project.html" class="nav-link" id="nav-project">Featured Project</a></li>
-          <li><a href="resume.html" class="nav-link" id="nav-resume">Resume</a></li>
-          <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        <ul class="ps-nav-items">
+          <li><a href="#profile" class="ps-nav-btn active" id="nav-profile">Profile</a></li>
+          <li><a href="#skills" class="ps-nav-btn" id="nav-skills">Skills</a></li>
+          <li><a href="#experience" class="ps-nav-btn" id="nav-experience">Experience</a></li>
+          <li><a href="project.html" class="ps-nav-btn" id="nav-project">Case Study</a></li>
+          <li><a href="resume.html" class="ps-nav-btn" id="nav-resume">Resume</a></li>
+          <li><a href="#contact" class="ps-nav-btn" id="nav-contact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="nav-actions">
-        <a href="resume.html" class="btn btn-gold btn-sm" id="btn-header-resume">Full Resume</a>
+      <!-- System Widgets -->
+      <div class="ps-system-widgets">
+        <div class="ps-widget-item">
+          <span class="ps-online-status"></span>
+          <span>Recruiter Ready</span>
+        </div>
+        <div class="ps-widget-item ps-trophy-badge" title="Academic Standing">
+          <span>&#x1F3C6; 3.62 GPA</span>
+        </div>
+        <div class="ps-widget-item" id="ps-system-clock">
+          10:08 AM
+        </div>
       </div>
     </div>
   </header>
@@ -41,94 +57,148 @@
   <main id="main-content">
     <div class="container">
 
-      <!-- Profile / Hero Section (Single-Page Component 1) -->
+      <!-- Profile & Hero Section (Single-Page Component 1) -->
       <section class="hero-section" id="profile">
         <div class="hero-layout">
           <div class="hero-content">
-            <div class="badge badge-status" id="availability-badge">
+            <div class="badge badge-status" id="system-badge">
               <span class="pulse-dot"></span>
               <span>Available for Cyber Risk &amp; IT Roles &bull; Expected Dec 2026</span>
             </div>
 
             <h1 class="hero-title">
-              Securing Enterprise Systems &amp; <br>
-              <span class="text-gradient">Analyzing Cyber Risk</span>
+              Enterprise Systems &amp; <br>
+              <span class="text-gradient">Cyber Risk Intelligence</span>
             </h1>
 
             <p class="hero-description">
-              Hello, I'm <strong style="color: var(--text-primary);">Benjamin Taylor</strong>. I am an Information Systems &amp; Analytics undergraduate 
-              at Louisiana State University's E.J. Ourso College of Business with a concentration in Cyber Risk. 
-              I blend technical acumen in SQL, Python, and Splunk with real-world IT operations, IAM security enforcement, and NIST risk modeling.
+              Hello, I'm <strong style="color: #ffffff;">Benjamin Taylor</strong>. I am an Information Systems &amp; Analytics undergraduate 
+              at Louisiana State University's E.J. Ourso College of Business with a concentration in <strong>Cyber Risk</strong>. 
+              I blend technical proficiency in SQL, Python, and Splunk with hands-on enterprise IT operations, Azure/Entra ID IAM policy enforcement, 
+              and quantitative NIST SP 800-30 threat assessments.
             </p>
 
             <div class="hero-actions">
-              <a href="project.html" class="btn btn-primary" id="btn-hero-project">
-                Explore Featured Project &rarr;
+              <a href="project.html" class="btn-ps btn-ps-primary" id="btn-hero-launch-project">
+                View Featured Case Study &rarr;
               </a>
-              <a href="resume.html" class="btn btn-secondary" id="btn-hero-resume">
-                View Full Resume
+              <a href="resume.html" class="btn-ps btn-ps-secondary" id="btn-hero-inspect-resume">
+                Inspect Full Resume
               </a>
-              <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
-                Contact Me
+              <a href="#contact" class="btn-ps btn-ps-secondary" id="btn-hero-connect">
+                Contact Directly
               </a>
             </div>
           </div>
 
-          <!-- Profile Academic Card -->
+          <!-- Academic Profile Card -->
           <div class="card hero-profile-card" id="profile-summary-card">
-            <div class="section-subtitle">Academic Overview</div>
-            <h3 style="margin-top: 0.25rem;">Louisiana State University</h3>
-            <p style="color: var(--accent-purple-light); font-weight: 600; font-size: 0.95rem; margin-bottom: 1.25rem;">
-              E.J. Ourso College of Business
+            <div class="section-subtitle">Academic Credentials</div>
+            <h3 style="margin-top: 0.2rem;">Louisiana State University</h3>
+            <p style="color: var(--ps-cyan-bright); font-weight: 600; font-size: 0.92rem; margin-bottom: 1.15rem;">
+              E.J. Ourso College of Business &bull; Baton Rouge, LA
             </p>
 
             <div class="profile-stat-item">
-              <span class="profile-stat-label">Degree</span>
-              <span class="profile-stat-val">B.S., Information Systems</span>
+              <span class="profile-stat-label">Major Degree</span>
+              <span class="profile-stat-val">B.S. Information Systems</span>
             </div>
             <div class="profile-stat-item">
               <span class="profile-stat-label">Concentration</span>
-              <span class="profile-stat-val" style="color: var(--accent-gold-light);">Cyber Risk</span>
+              <span class="profile-stat-val text-cyan">Cyber Risk</span>
             </div>
             <div class="profile-stat-item">
-              <span class="profile-stat-label">Graduation</span>
+              <span class="profile-stat-label">Graduation Target</span>
               <span class="profile-stat-val">December 2026</span>
             </div>
             <div class="profile-stat-item">
               <span class="profile-stat-label">Cumulative GPA</span>
-              <span class="profile-stat-val">3.62 / 4.0</span>
+              <span class="profile-stat-val text-gold">&#x2605; 3.62 / 4.0</span>
             </div>
             <div class="profile-stat-item">
-              <span class="profile-stat-label">Honors</span>
-              <span class="profile-stat-val">Dean's List &bull; President's Award</span>
+              <span class="profile-stat-label">Honors &amp; Awards</span>
+              <span class="profile-stat-val">Dean’s List &bull; President's Award</span>
             </div>
             <div class="profile-stat-item">
-              <span class="profile-stat-label">Affiliations</span>
+              <span class="profile-stat-label">Organization</span>
               <span class="profile-stat-val">LSU AITP Active Member</span>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- PlayStation Style Navigation Channels (Rigid Square Tiles) -->
+      <section style="padding: 1rem 0;" id="ps-dashboard-strip">
+        <div class="ps-carousel-header">
+          <div>
+            <div class="section-subtitle">Channel Navigation</div>
+            <h2>Portfolio Channels</h2>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Select a card to jump to content</p>
+        </div>
+
+        <div class="ps-carousel-strip">
+          <a href="#skills" class="ps-game-card">
+            <div>
+              <div class="ps-card-glyph-icon text-cyan">&#x25A2;</div>
+              <div class="ps-card-tag">Competencies</div>
+              <div class="ps-card-title">Technical Skills</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">NIST framework, Azure Entra ID, Splunk SPL, and SQL schemas.</p>
+            </div>
+            <div class="ps-card-action-cue">Review Loadout &rarr;</div>
+          </a>
+
+          <a href="project.html" class="ps-game-card active">
+            <div>
+              <div class="ps-card-glyph-icon text-gold">&#x2605;</div>
+              <div class="ps-card-tag text-gold">Featured Case Study</div>
+              <div class="ps-card-title">HHS Data Breach Analysis</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Empirical risk assessment analyzing healthcare attack vectors &amp; NIST mitigations.</p>
+            </div>
+            <div class="ps-card-action-cue text-gold">Open Case Study &rarr;</div>
+          </a>
+
+          <a href="#experience" class="ps-game-card">
+            <div>
+              <div class="ps-card-glyph-icon text-cyan">&#x25A2;</div>
+              <div class="ps-card-tag">Career</div>
+              <div class="ps-card-title">Work Experience</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">BREC IS Intern, LSU Screen Arts, Ewing Supply, and e-commerce.</p>
+            </div>
+            <div class="ps-card-action-cue">Inspect Roles &rarr;</div>
+          </a>
+
+          <a href="resume.html" class="ps-game-card">
+            <div>
+              <div class="ps-card-glyph-icon text-cyan">&#x25A2;</div>
+              <div class="ps-card-tag">Document</div>
+              <div class="ps-card-title">Full Curriculum Vitae</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Verified resume document with one-click print &amp; PDF generation.</p>
+            </div>
+            <div class="ps-card-action-cue">Open Resume &rarr;</div>
+          </a>
+        </div>
+      </section>
+
       <!-- Skills / Competencies Section (Single-Page Component 2) -->
       <section class="section" id="skills">
         <div class="section-header">
-          <div class="section-subtitle">Core Competencies</div>
+          <div class="section-subtitle">Core Capabilities</div>
           <h2>Technical Skills &amp; Domain Expertise</h2>
-          <p>Proficiencies across security frameworks, data querying, IT operations, and analytics tools.</p>
+          <p>Validated proficiencies spanning cybersecurity governance, data intelligence, and enterprise IT infrastructure.</p>
         </div>
 
         <div class="highlights-grid">
-          <!-- Cybersecurity & Risk -->
+          <!-- Cyber Risk & Security -->
           <div class="card highlight-card" id="card-cyber-risk">
             <div class="highlight-icon">&#x1F6E1;&#xFE0F;</div>
-            <h3>Cyber Risk &amp; Security</h3>
-            <p>Conducting systematic threat modeling, attack vector analysis, and enforcing least-privilege IAM controls.</p>
+            <h3>Cyber Risk &amp; Governance</h3>
+            <p>Conducting systematic risk assessments, attack vector mapping, and enforcing least-privilege IAM policies.</p>
             <div class="skill-chips-wrapper">
-              <span class="skill-tag">NIST Risk Framework</span>
+              <span class="skill-tag">NIST SP 800-30</span>
               <span class="skill-tag">Azure &amp; Entra ID</span>
-              <span class="skill-tag">IAM Policies</span>
-              <span class="skill-tag">SPL (Splunk)</span>
+              <span class="skill-tag">IAM Policy Control</span>
+              <span class="skill-tag">Splunk (SPL)</span>
               <span class="skill-tag">Security Monitoring</span>
             </div>
           </div>
@@ -137,9 +207,9 @@
           <div class="card highlight-card" id="card-data-analytics">
             <div class="highlight-icon">&#x1F4CA;</div>
             <h3>Data Analytics &amp; Querying</h3>
-            <p>Extracting actionable business intelligence from complex datasets through relational modeling and visualization.</p>
+            <p>Extracting high-value operational insights from raw datasets via relational queries and visual dashboards.</p>
             <div class="skill-chips-wrapper">
-              <span class="skill-tag">SQL &amp; MySQL</span>
+              <span class="skill-tag">SQL (Relational)</span>
               <span class="skill-tag">Python (Data Viz)</span>
               <span class="skill-tag">Power BI</span>
               <span class="skill-tag">Jupyter Notebooks</span>
@@ -150,8 +220,8 @@
           <!-- Enterprise Systems & Cloud -->
           <div class="card highlight-card" id="card-enterprise-cloud">
             <div class="highlight-icon">&#x2601;&#xFE0F;</div>
-            <h3>Enterprise &amp; Cloud Tools</h3>
-            <p>Administering modern workflows, IT support triage, cloud infrastructure, and version control systems.</p>
+            <h3>Enterprise Systems &amp; Cloud</h3>
+            <p>Cloud management, ticket triage, IT service operations, and reproducible software toolchains.</p>
             <div class="skill-chips-wrapper">
               <span class="skill-tag">AWS Management Console</span>
               <span class="skill-tag">Jira &amp; JQL</span>
@@ -163,8 +233,8 @@
         </div>
 
         <div style="margin-top: 1.5rem; text-align: center;">
-          <a href="resume.html#skills" class="btn btn-secondary btn-sm">
-            View All Certifications &amp; Tools on Resume &rarr;
+          <a href="resume.html#skills" class="btn-ps btn-ps-secondary btn-ps-sm">
+            View Complete Certifications &amp; Tools on Resume &rarr;
           </a>
         </div>
       </section>
@@ -172,9 +242,9 @@
       <!-- Experience / Jobs Held Section (Single-Page Component 3) -->
       <section class="section" id="experience">
         <div class="section-header">
-          <div class="section-subtitle">Professional Background</div>
+          <div class="section-subtitle">Professional Record</div>
           <h2>Experience &amp; Jobs Held</h2>
-          <p>Demonstrated impact across IT security, departmental operations, enterprise supply chains, and client services.</p>
+          <p>Documented contributions across IT security, departmental operations, commercial logistics, and client services.</p>
         </div>
 
         <div class="experience-preview-grid">
@@ -186,8 +256,8 @@
                 <span class="job-dates">Jun 2026 &ndash; Aug 2026</span>
               </div>
               <div class="job-company">BREC &bull; Baton Rouge, LA</div>
-              <p style="margin-top: 0.75rem; font-size: 0.92rem;">
-                Enforced IAM policies, handled user provisioning in Azure &amp; Entra ID, performed security monitoring, and triaged over 100 IT support tickets in Jira for Louisiana's largest recreation agency.
+              <p style="margin-top: 0.75rem; font-size: 0.9rem;">
+                Enforced enterprise IAM policies, managed user provisioning via Azure &amp; Entra ID, performed security monitoring, and triaged 100+ IT support tickets in Jira for Louisiana's largest recreation agency.
               </p>
             </div>
             <div class="skill-chips-wrapper">
@@ -206,13 +276,13 @@
                 <span class="job-dates">Aug 2023 &ndash; May 2024</span>
               </div>
               <div class="job-company">LSU Screen Arts Department &bull; Baton Rouge, LA</div>
-              <p style="margin-top: 0.75rem; font-size: 0.92rem;">
-                Managed departmental computer systems and hardware inventory. Utilized internal LSU databases to coordinate equipment checkout workflows and communicate with faculty and students.
+              <p style="margin-top: 0.75rem; font-size: 0.9rem;">
+                Administered departmental computer systems, maintained hardware inventory, and utilized LSU databases to coordinate student and faculty asset checkouts.
               </p>
             </div>
             <div class="skill-chips-wrapper">
               <span class="skill-tag">LSU DBMS</span>
-              <span class="skill-tag">Inventory Systems</span>
+              <span class="skill-tag">Systems Inventory</span>
               <span class="skill-tag">Hardware Support</span>
             </div>
           </div>
@@ -225,13 +295,13 @@
                 <span class="job-dates">Jul 2024 &ndash; Mar 2025</span>
               </div>
               <div class="job-company">Ewing Outdoor Supply &bull; Baton Rouge, LA</div>
-              <p style="margin-top: 0.75rem; font-size: 0.92rem;">
-                Leveraged corporate Information Systems to manage warehouse stock, coordinate large-scale order fulfillment, and assist commercial clients through process-oriented logistics.
+              <p style="margin-top: 0.75rem; font-size: 0.9rem;">
+                Utilized corporate Information Systems for real-time warehouse inventory management, customer order fulfillment, and high-volume dispatch logistics.
               </p>
             </div>
             <div class="skill-chips-wrapper">
               <span class="skill-tag">Enterprise IS</span>
-              <span class="skill-tag">Logistics</span>
+              <span class="skill-tag">Order Fulfillment</span>
               <span class="skill-tag">Process Thinking</span>
             </div>
           </div>
@@ -244,12 +314,12 @@
                 <span class="job-dates">Jun 2022 &ndash; Dec 2025</span>
               </div>
               <div class="job-company">Freelance / Self-Employed</div>
-              <p style="margin-top: 0.75rem; font-size: 0.92rem;">
-                Designed products in Adobe Creative Suite, built e-commerce stores, ran targeted digital campaigns, and analyzed advertising performance data to drive customer conversions.
+              <p style="margin-top: 0.75rem; font-size: 0.9rem;">
+                Built e-commerce platforms, created visual identities in Adobe Creative Suite, executed digital ad campaigns, and analyzed performance metrics to boost conversions.
               </p>
             </div>
             <div class="skill-chips-wrapper">
-              <span class="skill-tag">Adobe Suite</span>
+              <span class="skill-tag">Adobe Creative Suite</span>
               <span class="skill-tag">Ad Analytics</span>
               <span class="skill-tag">E-Commerce</span>
             </div>
@@ -257,30 +327,30 @@
         </div>
 
         <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-          <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">
-            * Also encompasses 4+ years of customer service, high-volume teamwork, and agility in the Food &amp; Beverage Industry (2020&ndash;Present).
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+            * Also encompasses 4+ years of customer service agility and teamwork in the Food &amp; Beverage Industry (2020&ndash;Present).
           </p>
-          <a href="resume.html" class="btn btn-primary btn-sm" id="btn-exp-to-resume">
-            Read Complete Work Experience on Resume &rarr;
+          <a href="resume.html" class="btn-ps btn-ps-primary btn-ps-sm" id="btn-exp-to-resume">
+            Complete Work History on Resume &rarr;
           </a>
         </div>
       </section>
 
       <!-- Featured Project Spotlight Preview Banner -->
       <section class="section" id="featured-project-preview">
-        <div class="card" style="border: 1px solid var(--border-hover); background: linear-gradient(135deg, rgba(24, 20, 48, 0.9), rgba(15, 21, 39, 0.95));">
-          <div class="section-subtitle">Featured Project Case Study</div>
+        <div class="card" style="border: 1px solid var(--border-card); background: linear-gradient(135deg, rgba(0, 55, 145, 0.25) 0%, rgba(6, 11, 27, 0.95) 100%);">
+          <div class="section-subtitle text-gold">&#x2605; Spotlight Project</div>
           <h2 style="margin: 0.5rem 0 1rem;">HHS Healthcare Data Breach &amp; Cyber Risk Assessment</h2>
-          <p style="max-width: 780px; font-size: 1.05rem;">
+          <p style="max-width: 820px; font-size: 1.05rem;">
             A rigorous risk assessment of the U.S. health sector utilizing the <strong>NIST Risk Assessment Framework (SP 800-30)</strong>. 
-            Analyzed historical breach vectors from the Department of Health &amp; Human Services (HHS) dataset, identified critical vulnerabilities, 
-            and formulated proactive mitigation strategies for executive leadership.
+            Analyzed historical breach telemetry from the Department of Health &amp; Human Services (HHS) repository, evaluated attack likelihood, 
+            and formulated defense-in-depth mitigations for executive leadership.
           </p>
           <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="project.html" class="btn btn-primary" id="btn-banner-project">
+            <a href="project.html" class="btn-ps btn-ps-primary" id="btn-banner-project">
               Open Full Case Study Page &rarr;
             </a>
-            <a href="resume.html#projects" class="btn btn-secondary" id="btn-banner-other-projects">
+            <a href="resume.html#projects" class="btn-ps btn-ps-secondary" id="btn-banner-other-projects">
               View All 3 Projects on Resume
             </a>
           </div>
@@ -291,8 +361,8 @@
       <section class="section" id="contact">
         <div class="section-header">
           <div class="section-subtitle">Get In Touch</div>
-          <h2>Contact Benjamin Taylor</h2>
-          <p>Open to inquiries regarding internships, full-time positions, and cybersecurity collaborations.</p>
+          <h2>Contact &amp; Professional Inquiries</h2>
+          <p>Open for discussions regarding cybersecurity analyst internships, full-time IT positions, and technical collaborations.</p>
         </div>
 
         <div class="contact-grid">
@@ -334,25 +404,25 @@
           <!-- Message Card / Call to Action -->
           <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <h3 style="margin-bottom: 0.75rem;">Connect Directly</h3>
-              <p style="font-size: 0.95rem; margin-bottom: 1.25rem;">
-                Whether you have an upcoming opportunity in cybersecurity analysis, IT operations, or systems design, 
-                I would welcome the conversation.
+              <h3 style="margin-bottom: 0.6rem;">Connect Directly</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 1.25rem;">
+                Looking for an analyst who blends technical IT operational skills with quantitative cyber risk awareness? 
+                Feel free to send an email or connect on LinkedIn.
               </p>
               <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                <a href="mailto:ssbentaylorr@gmail.com?subject=Opportunity%20Discussion%20-%20Benjamin%20Taylor" class="btn btn-gold" style="width: 100%;">
-                  &#x2709;&#xFE0F; Send Me an Email
+                <a href="mailto:ssbentaylorr@gmail.com?subject=Career%20Opportunity%20-%20Benjamin%20Taylor" class="btn-ps btn-ps-gold" style="width: 100%;">
+                  Send an Email Message
                 </a>
-                <a href="https://linkedin.com/in/benjamin-taylor-6512982b8" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%;">
-                  &#x1F4BC; Message on LinkedIn
+                <a href="https://linkedin.com/in/benjamin-taylor-6512982b8" target="_blank" rel="noopener" class="btn-ps btn-ps-secondary" style="width: 100%;">
+                  Connect on LinkedIn
                 </a>
-                <a href="resume.html" class="btn btn-secondary" style="width: 100%;">
-                  &#x1F4C4; Review &amp; Print My Resume
+                <a href="resume.html" class="btn-ps btn-ps-secondary" style="width: 100%;">
+                  Inspect &amp; Print Resume
                 </a>
               </div>
             </div>
-            <div style="margin-top: 1.5rem; font-size: 0.82rem; color: var(--text-muted); text-align: center;">
-              Prompt responses guaranteed within 24 business hours.
+            <div style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--text-muted); text-align: center;">
+              Average response time: within 24 business hours.
             </div>
           </div>
         </div>
@@ -372,11 +442,24 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="project.html">Featured Project</a></li>
+        <li><a href="project.html">Case Study</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </footer>
+
+  <!-- Real-Time Console Clock -->
+  <script>
+    function updateClock() {
+      const clockEl = document.getElementById('ps-system-clock');
+      if (clockEl) {
+        const now = new Date();
+        clockEl.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      }
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
 
 </body>
 </html>

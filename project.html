@@ -9,30 +9,45 @@
 </head>
 <body>
 
-  <!-- Navigation Header -->
-  <header class="site-header" id="main-header">
+  <!-- Ambient Technical Background -->
+  <div class="ps-ambient-bg" aria-hidden="true">
+    <div class="ps-wave-ribbon"></div>
+    <div class="ps-grid-lines"></div>
+  </div>
+
+  <!-- Top System Bar -->
+  <header class="ps-system-bar" id="main-header">
     <div class="container">
-      <a href="index.html" class="logo" id="brand-logo" aria-label="Benjamin Taylor Portfolio">
-        <span class="logo-badge">BT</span>
-        <div>
-          <span>Benjamin Taylor</span>
-          <span class="logo-sub">LSU &bull; IS &amp; Cyber Risk</span>
+      <div class="ps-console-brand">
+        <a href="index.html" class="ps-logo-chip" aria-label="Benjamin Taylor Home">BT</a>
+        <div class="ps-brand-text">
+          <span class="ps-brand-name">Benjamin Taylor</span>
+          <span class="ps-brand-badge">LSU &bull; Information Systems</span>
         </div>
-      </a>
+      </div>
 
       <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
-          <li><a href="index.html#skills" class="nav-link" id="nav-skills">Skills</a></li>
-          <li><a href="index.html#experience" class="nav-link" id="nav-experience">Experience</a></li>
-          <li><a href="project.html" class="nav-link active" id="nav-project">Featured Project</a></li>
-          <li><a href="resume.html" class="nav-link" id="nav-resume">Resume</a></li>
-          <li><a href="index.html#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        <ul class="ps-nav-items">
+          <li><a href="index.html" class="ps-nav-btn" id="nav-home">Home</a></li>
+          <li><a href="index.html#skills" class="ps-nav-btn" id="nav-skills">Skills</a></li>
+          <li><a href="index.html#experience" class="ps-nav-btn" id="nav-experience">Experience</a></li>
+          <li><a href="project.html" class="ps-nav-btn active" id="nav-project">Case Study</a></li>
+          <li><a href="resume.html" class="ps-nav-btn" id="nav-resume">Resume</a></li>
+          <li><a href="index.html#contact" class="ps-nav-btn" id="nav-contact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="nav-actions">
-        <a href="index.html" class="btn btn-secondary btn-sm" id="btn-header-back">&larr; Back Home</a>
+      <!-- System Widgets -->
+      <div class="ps-system-widgets">
+        <a href="index.html" class="btn-ps btn-ps-secondary btn-ps-sm" id="btn-header-back">
+          &larr; Back to Hub
+        </a>
+        <div class="ps-widget-item ps-trophy-badge">
+          <span>&#x1F3C6; Spotlight</span>
+        </div>
+        <div class="ps-widget-item" id="ps-system-clock">
+          10:08 AM
+        </div>
       </div>
     </div>
   </header>
@@ -43,18 +58,18 @@
 
       <!-- Project Hero Section -->
       <section class="project-hero" id="project-intro">
-        <div class="badge badge-gold" style="margin-bottom: 1rem;">
-          <span class="pulse-dot" style="background-color: var(--accent-gold);"></span>
-          <span>Featured Cybersecurity Case Study &bull; LSU ISDS</span>
+        <div class="badge badge-gold" style="margin-bottom: 0.85rem;">
+          <span class="pulse-dot" style="background-color: var(--ps-gold);"></span>
+          <span>Featured Cybersecurity Project &bull; LSU ISDS</span>
         </div>
 
-        <h1 style="margin-bottom: 1rem;">
+        <h1 style="margin-bottom: 0.85rem;">
           HHS Data Breach Analysis &amp; <br>
           <span class="text-gradient">Healthcare Sector Cyber Risk Assessment</span>
         </h1>
 
-        <p style="font-size: 1.2rem; max-width: 860px; line-height: 1.75;">
-          A team-based, data-driven cybersecurity risk assessment analyzing the U.S. Department of Health and Human Services (HHS) 
+        <p style="font-size: 1.15rem; max-width: 880px; line-height: 1.7;">
+          A team-based, data-driven cybersecurity risk assessment examining the U.S. Department of Health and Human Services (HHS) 
           breach repository. Utilizing the <strong>NIST SP 800-30 Risk Assessment Framework</strong>, our team modeled critical threat vectors, 
           evaluated breach likelihood and operational impact, and formulated strategic defense-in-depth mitigations for healthcare organizations.
         </p>
@@ -66,26 +81,26 @@
             <div class="meta-value">Cyber Risk &amp; Healthcare IT</div>
           </div>
           <div class="project-meta-item">
-            <div class="meta-label">Framework Used</div>
+            <div class="meta-label">Standard Framework</div>
             <div class="meta-value">NIST SP 800-30</div>
           </div>
           <div class="project-meta-item">
-            <div class="meta-label">Analysis Tooling</div>
+            <div class="meta-label">Telemetry &amp; Tooling</div>
             <div class="meta-value">Microsoft Excel &amp; Data Viz</div>
           </div>
           <div class="project-meta-item">
-            <div class="meta-label">Institution</div>
+            <div class="meta-label">Academic Base</div>
             <div class="meta-value">LSU E.J. Ourso College of Business</div>
           </div>
         </div>
 
         <!-- Action Links -->
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="resume.html#projects" class="btn btn-primary" id="btn-view-all-projects">
-            &#x1F4C4; View All Projects on Resume &rarr;
+        <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+          <a href="resume.html#projects" class="btn-ps btn-ps-primary" id="btn-view-all-projects">
+            View All Projects on Resume &rarr;
           </a>
-          <a href="index.html#contact" class="btn btn-secondary" id="btn-discuss-project">
-            &#x2709;&#xFE0F; Discuss This Project with Benjamin
+          <a href="index.html#contact" class="btn-ps btn-ps-secondary" id="btn-discuss-project">
+            Discuss This Project with Benjamin
           </a>
         </div>
       </section>
@@ -115,12 +130,12 @@
           <!-- Architectural / Framework Visual Showcase -->
           <div class="project-showcase-visual">
             <div class="section-subtitle">Assessment Framework</div>
-            <h3 style="margin-top: 0.25rem;">NIST Risk Assessment Lifecycle Implementation</h3>
-            <p style="margin-top: 0.75rem; font-size: 0.95rem;">
+            <h3 style="margin-top: 0.2rem;">NIST Risk Assessment Lifecycle Implementation</h3>
+            <p style="margin-top: 0.65rem; font-size: 0.92rem;">
               Our evaluation systematically transitioned from raw breach data extraction to quantitative threat likelihood scoring, 
               vulnerability correlation, and actionable mitigation roadmaps aligned with federal compliance mandates.
             </p>
-            <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <div style="margin-top: 1.25rem; display: flex; gap: 0.45rem; flex-wrap: wrap;">
               <span class="skill-tag">Threat Source Characterization</span>
               <span class="skill-tag">Vulnerability Identification</span>
               <span class="skill-tag">Likelihood Determination</span>
@@ -132,7 +147,7 @@
           <!-- Section 1: Problem Background & Dataset -->
           <section class="section" style="padding-top: 0;">
             <div class="section-subtitle">Context &amp; Challenge</div>
-            <h2 style="font-size: 1.8rem; margin: 0.5rem 0 1rem;">The Vulnerability of U.S. Healthcare Infrastructure</h2>
+            <h2 style="font-size: 1.7rem; margin: 0.4rem 0 0.85rem;">The Vulnerability of U.S. Healthcare Infrastructure</h2>
             <p>
               The healthcare sector represents one of the most targeted critical infrastructure sectors in the United States. 
               Under HIPAA requirements, covered entities and business associates must report breaches affecting 500 or more individuals 
@@ -145,13 +160,13 @@
               prioritized mitigation strategies.
             </p>
 
-            <div class="section-subtitle" style="margin-top: 2rem;">Analytical Approach</div>
-            <h2 style="font-size: 1.8rem; margin: 0.5rem 0 1rem;">Data Cleaning &amp; Quantitative Analysis in Excel</h2>
+            <div class="section-subtitle" style="margin-top: 1.75rem;">Analytical Methodology</div>
+            <h2 style="font-size: 1.7rem; margin: 0.4rem 0 0.85rem;">Data Cleaning &amp; Quantitative Analysis in Excel</h2>
             <p>
               Using advanced Microsoft Excel functionalities &mdash; including pivot tables, multi-parameter conditional lookups, 
-              and categorical aggregation &mdash; our team cleansed and parsed the historical HHS breach records:
+              and categorical aggregation &mdash; our team cleansed and parsed historical HHS breach records:
             </p>
-            <ul style="padding-left: 1.25rem; margin-top: 0.5rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem;">
+            <ul style="padding-left: 1.25rem; margin-top: 0.5rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
               <li><strong>Categorization by Breach Type:</strong> Segmented incidents into Hacking/IT Incidents, Unauthorized Access/Disclosure, Theft, Loss, and Improper Disposal.</li>
               <li><strong>Location of Breached Information:</strong> Mapped breaches across Network Servers, Email Accounts, Electronic Medical Records (EMR), Laptops, and Paper/Films.</li>
               <li><strong>Entity Profiling:</strong> Differentiated breach trends among Healthcare Providers, Business Associates, Health Plans, and Healthcare Clearinghouses.</li>
@@ -160,66 +175,66 @@
 
           <!-- Section 2: Prominent Attack Vectors Identified -->
           <section class="section" style="padding-top: 0;">
-            <div class="section-subtitle">Findings</div>
-            <h2 style="font-size: 1.8rem; margin: 0.5rem 0 1.5rem;">Most Prominent Attack Vectors Discovered</h2>
+            <div class="section-subtitle">Critical Findings</div>
+            <h2 style="font-size: 1.7rem; margin: 0.4rem 0 1.25rem;">Most Prominent Attack Vectors Discovered</h2>
 
             <div class="card-grid" style="grid-template-columns: 1fr 1fr; margin-top: 0;">
-              <div class="card" style="padding: 1.5rem;">
-                <h4 style="color: var(--accent-gold-light); margin-bottom: 0.5rem;">&#x1F47E; Network Server Ransomware</h4>
-                <p style="font-size: 0.9rem;">Hacking incidents targeting centralized network servers and EMR databases represented the vast majority of exposed patient records and operational paralysis.</p>
+              <div class="card" style="padding: 1.35rem;">
+                <h4 style="color: var(--ps-cyan-bright); margin-bottom: 0.4rem;">Network Server Ransomware</h4>
+                <p style="font-size: 0.88rem;">Hacking incidents targeting centralized network servers and EMR databases represented the vast majority of exposed patient records and operational paralysis.</p>
               </div>
 
-              <div class="card" style="padding: 1.5rem;">
-                <h4 style="color: var(--accent-gold-light); margin-bottom: 0.5rem;">&#x1F4E9; Email Phishing &amp; Credential Theft</h4>
-                <p style="font-size: 0.9rem;">Compromised employee credentials via spear-phishing served as the predominant entry point into corporate networks and clinical communication systems.</p>
+              <div class="card" style="padding: 1.35rem;">
+                <h4 style="color: var(--ps-cyan-bright); margin-bottom: 0.4rem;">Email Phishing &amp; Credential Theft</h4>
+                <p style="font-size: 0.88rem;">Compromised employee credentials via spear-phishing served as the predominant entry point into corporate networks and clinical communication systems.</p>
               </div>
 
-              <div class="card" style="padding: 1.5rem;">
-                <h4 style="color: var(--accent-gold-light); margin-bottom: 0.5rem;">&#x1F510; Third-Party Business Associates</h4>
-                <p style="font-size: 0.9rem;">Vendor supply chain vulnerabilities exposed massive quantities of aggregated PHI when billing, claims processing, or IT contractors suffered security failures.</p>
+              <div class="card" style="padding: 1.35rem;">
+                <h4 style="color: var(--ps-cyan-bright); margin-bottom: 0.4rem;">Third-Party Business Associates</h4>
+                <p style="font-size: 0.88rem;">Vendor supply chain vulnerabilities exposed massive quantities of aggregated PHI when billing, claims processing, or IT contractors suffered security failures.</p>
               </div>
 
-              <div class="card" style="padding: 1.5rem;">
-                <h4 style="color: var(--accent-gold-light); margin-bottom: 0.5rem;">&#x1F4BB; Unencrypted Portable Endpoints</h4>
-                <p style="font-size: 0.9rem;">Laptops, storage drives, and medical devices lacking mandatory full-disk encryption frequently contributed to non-compliance disclosures upon theft or loss.</p>
+              <div class="card" style="padding: 1.35rem;">
+                <h4 style="color: var(--ps-cyan-bright); margin-bottom: 0.4rem;">Unencrypted Portable Endpoints</h4>
+                <p style="font-size: 0.88rem;">Laptops, storage drives, and medical devices lacking mandatory full-disk encryption frequently contributed to non-compliance disclosures upon theft or loss.</p>
               </div>
             </div>
           </section>
 
           <!-- Section 3: Mitigation Strategies & Formal Presentation -->
           <section class="section" style="padding-top: 0;">
-            <div class="section-subtitle">Recommendations</div>
-            <h2 style="font-size: 1.8rem; margin: 0.5rem 0 1rem;">Proposed Risk Mitigation Strategies</h2>
+            <div class="section-subtitle">Defensive Architecture</div>
+            <h2 style="font-size: 1.7rem; margin: 0.4rem 0 0.85rem;">Proposed Risk Mitigation Strategies</h2>
             <p>
-              Applying the defensive controls recommended in NIST publications, our team designed an actionable remediation strategy 
+              Applying defensive controls recommended in NIST publications, our team designed an actionable remediation strategy 
               prioritizing low-overhead, high-impact defense mechanisms:
             </p>
 
-            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
-              <div class="card" style="padding: 1.25rem;">
-                <strong style="color: var(--text-primary);">&#x2714; Zero Trust &amp; Strict IAM Enforcement:</strong>
-                <p style="font-size: 0.92rem; margin-top: 0.25rem;">Mandate phishing-resistant Multi-Factor Authentication (MFA) across all email and network portals, utilizing conditional access policies (e.g., Azure Entra ID) and strict least-privilege role boundaries.</p>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.85rem;">
+              <div class="card" style="padding: 1.2rem;">
+                <strong style="color: #ffffff;">&#x2714; Zero Trust &amp; Strict IAM Enforcement:</strong>
+                <p style="font-size: 0.9rem; margin-top: 0.25rem;">Mandate phishing-resistant Multi-Factor Authentication (MFA) across all email and network portals, utilizing conditional access policies (e.g., Azure Entra ID) and strict least-privilege role boundaries.</p>
               </div>
 
-              <div class="card" style="padding: 1.25rem;">
-                <strong style="color: var(--text-primary);">&#x2714; Network Segmentation &amp; EDR:</strong>
-                <p style="font-size: 0.92rem; margin-top: 0.25rem;">Isolate clinical IoT devices and patient monitoring systems from general staff networks to prevent lateral movement during ransomware outbreaks, backed by automated Endpoint Detection &amp; Response.</p>
+              <div class="card" style="padding: 1.2rem;">
+                <strong style="color: #ffffff;">&#x2714; Network Segmentation &amp; EDR:</strong>
+                <p style="font-size: 0.9rem; margin-top: 0.25rem;">Isolate clinical IoT devices and patient monitoring systems from general staff networks to prevent lateral movement during ransomware outbreaks, backed by automated Endpoint Detection &amp; Response.</p>
               </div>
 
-              <div class="card" style="padding: 1.25rem;">
-                <strong style="color: var(--text-primary);">&#x2714; Immutable Air-Gapped Backups:</strong>
-                <p style="font-size: 0.92rem; margin-top: 0.25rem;">Establish offline, immutable backup repositories to guarantee prompt system restoration without capitulating to extortion attempts.</p>
+              <div class="card" style="padding: 1.2rem;">
+                <strong style="color: #ffffff;">&#x2714; Immutable Air-Gapped Backups:</strong>
+                <p style="font-size: 0.9rem; margin-top: 0.25rem;">Establish offline, immutable backup repositories to guarantee prompt system restoration without capitulating to extortion attempts.</p>
               </div>
 
-              <div class="card" style="padding: 1.25rem;">
-                <strong style="color: var(--text-primary);">&#x2714; Continuous Security Awareness:</strong>
-                <p style="font-size: 0.92rem; margin-top: 0.25rem;">Implement recurring phishing simulations and role-tailored security awareness education for clinical and administrative staff.</p>
+              <div class="card" style="padding: 1.2rem;">
+                <strong style="color: #ffffff;">&#x2714; Continuous Security Awareness:</strong>
+                <p style="font-size: 0.9rem; margin-top: 0.25rem;">Implement recurring phishing simulations and role-tailored security awareness education for clinical and administrative staff.</p>
               </div>
             </div>
 
-            <div style="margin-top: 2rem;">
-              <div class="section-subtitle">Formal Presentation</div>
-              <h3 style="margin: 0.35rem 0 0.75rem;">Executive Presentation &amp; Stakeholder Briefing</h3>
+            <div style="margin-top: 1.75rem;">
+              <div class="section-subtitle">Executive Briefing</div>
+              <h3 style="margin: 0.3rem 0 0.65rem;">Formal Presentation &amp; Stakeholder Briefing</h3>
               <p>
                 Our team synthesized these analytical insights into a formal executive presentation delivered to course faculty and fellow students 
                 at LSU's E.J. Ourso College of Business. The presentation emphasized translating complex cyber telemetry into quantifiable financial 
@@ -231,12 +246,12 @@
           <!-- Section 4: Other Projects in Portfolio -->
           <section class="section" style="padding-top: 0;">
             <div class="section-subtitle">Additional Portfolio Work</div>
-            <h2 style="font-size: 1.8rem; margin: 0.5rem 0 1rem;">More Projects by Benjamin</h2>
+            <h2 style="font-size: 1.7rem; margin: 0.4rem 0 0.85rem;">More Projects by Benjamin</h2>
 
-            <div class="card-grid" style="grid-template-columns: 1fr 1fr; margin-top: 1rem;">
-              <div class="card" style="padding: 1.5rem;">
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr; margin-top: 0.85rem;">
+              <div class="card" style="padding: 1.35rem;">
                 <h4>Car Dealership Data Modeling</h4>
-                <p style="font-size: 0.9rem; margin-top: 0.35rem;">
+                <p style="font-size: 0.88rem; margin-top: 0.3rem;">
                   Designed an ERD model, Relational Data Model, and SQL schema for an automotive dealership database, including full metadata and data dictionary.
                 </p>
                 <div class="skill-chips-wrapper" style="margin-top: 0.5rem;">
@@ -246,9 +261,9 @@
                 </div>
               </div>
 
-              <div class="card" style="padding: 1.5rem;">
+              <div class="card" style="padding: 1.35rem;">
                 <h4>Static Website Creation</h4>
-                <p style="font-size: 0.9rem; margin-top: 0.35rem;">
+                <p style="font-size: 0.88rem; margin-top: 0.3rem;">
                   Built a responsive static website using VS Code, GitHub, Anaconda Prompt, and Zurb templates, configured with Cloudflare DNS &amp; security routing.
                 </p>
                 <div class="skill-chips-wrapper" style="margin-top: 0.5rem;">
@@ -264,22 +279,22 @@
 
         <!-- Sidebar: Project Specifications & Core Tools -->
         <aside class="project-sidebar">
-          <div class="card" style="position: sticky; top: calc(var(--header-height) + 1.5rem);">
-            <div class="section-subtitle">Quick Summary</div>
-            <h3 style="font-size: 1.3rem; margin: 0.5rem 0 1.25rem;">Project Specifications</h3>
+          <div class="card" style="position: sticky; top: calc(var(--header-height) + 1.25rem);">
+            <div class="section-subtitle">Specifications</div>
+            <h3 style="font-size: 1.2rem; margin: 0.4rem 0 1rem;">Project Details</h3>
 
-            <div style="margin-bottom: 1.25rem;">
-              <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem;">Author</div>
-              <p style="font-size: 0.92rem; color: var(--accent-gold-light); margin: 0;">Benjamin Taylor &amp; Team</p>
+            <div style="margin-bottom: 1rem;">
+              <div style="font-size: 0.82rem; font-weight: 600; color: #ffffff; margin-bottom: 0.3rem;">Lead Analyst</div>
+              <p style="font-size: 0.9rem; color: var(--ps-cyan-bright); margin: 0;">Benjamin Taylor &amp; Team</p>
             </div>
 
-            <div style="margin-bottom: 1.25rem;">
-              <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem;">Academic Context</div>
-              <p style="font-size: 0.92rem; color: var(--text-secondary); margin: 0;">LSU E.J. Ourso College of Business &bull; ISDS Department</p>
+            <div style="margin-bottom: 1rem;">
+              <div style="font-size: 0.82rem; font-weight: 600; color: #ffffff; margin-bottom: 0.3rem;">Academic Context</div>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">LSU E.J. Ourso College of Business &bull; ISDS Department</p>
             </div>
 
-            <div style="margin-bottom: 1.25rem;">
-              <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem;">Key Competencies</div>
+            <div style="margin-bottom: 1rem;">
+              <div style="font-size: 0.82rem; font-weight: 600; color: #ffffff; margin-bottom: 0.3rem;">Key Competencies</div>
               <div class="skill-chips-wrapper">
                 <span class="skill-tag">Risk Assessment</span>
                 <span class="skill-tag">NIST Framework</span>
@@ -290,14 +305,14 @@
               </div>
             </div>
 
-            <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.5rem 0;">
+            <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin: 1.25rem 0;">
 
             <div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.75rem;">Next Steps</div>
-              <a href="resume.html" class="btn btn-primary" style="width: 100%; font-size: 0.9rem; margin-bottom: 0.75rem;">
+              <div style="font-size: 0.82rem; font-weight: 600; color: #ffffff; margin-bottom: 0.65rem;">Next Steps</div>
+              <a href="resume.html" class="btn-ps btn-ps-primary" style="width: 100%; font-size: 0.88rem; margin-bottom: 0.65rem;">
                 View Benjamin's Resume &rarr;
               </a>
-              <a href="index.html#contact" class="btn btn-secondary" style="width: 100%; font-size: 0.9rem;">
+              <a href="index.html#contact" class="btn-ps btn-ps-secondary" style="width: 100%; font-size: 0.88rem;">
                 Contact Benjamin
               </a>
             </div>
@@ -319,12 +334,25 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="index.html#skills">Skills</a></li>
         <li><a href="index.html#experience">Experience</a></li>
-        <li><a href="project.html">Featured Project</a></li>
+        <li><a href="project.html">Case Study</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </div>
   </footer>
+
+  <!-- Real-Time Clock -->
+  <script>
+    function updateClock() {
+      const clockEl = document.getElementById('ps-system-clock');
+      if (clockEl) {
+        const now = new Date();
+        clockEl.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      }
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
 
 </body>
 </html>
