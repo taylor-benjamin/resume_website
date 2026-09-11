@@ -2,7 +2,7 @@
 
 **Course**: ISDS 4125: Analysis and Design of Information Systems  
 **Instructor**: Dr. Gabriele Piccoli | LSU E.J. Ourso College of Business  
-**Live Website**: 
+**Live Website**: https://taylor-benjamin.github.io/resume_website/
 **GitHub Repository**: [https://github.com/taylor-benjamin/resume_website](https://github.com/taylor-benjamin/resume_website)
 
 ---
