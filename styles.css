@@ -19,7 +19,7 @@
   --ps-navy-surface: #0a122c;
   --ps-navy-card: #0d1738;
   --ps-navy-hover: #12204c;
-  
+
   /* Precision Accents */
   --ps-blue-royal: #003791;
   --ps-blue-electric: #0066cc;
@@ -56,7 +56,9 @@
 }
 
 /* --- Global Reset & Foundation --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -80,7 +82,7 @@ body {
   position: relative;
   overflow-x: hidden;
   color: var(--text-primary);
-  background: 
+  background:
     radial-gradient(ellipse 70% 40% at 50% -5%, rgba(0, 102, 204, 0.28) 0%, transparent 65%),
     radial-gradient(circle at 90% 30%, rgba(0, 168, 243, 0.1) 0%, transparent 50%),
     linear-gradient(180deg, #060b1b 0%, #040711 100%);
@@ -105,7 +107,7 @@ body {
   height: 120%;
   left: -20%;
   top: -10%;
-  background: 
+  background:
     radial-gradient(ellipse at 35% 45%, rgba(0, 168, 243, 0.08) 0%, transparent 50%),
     radial-gradient(ellipse at 65% 25%, rgba(0, 55, 145, 0.12) 0%, transparent 55%);
   filter: blur(50px);
@@ -115,7 +117,7 @@ body {
 .ps-grid-lines {
   position: absolute;
   inset: 0;
-  background-image: 
+  background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 60px 60px;
@@ -124,7 +126,12 @@ body {
 }
 
 /* --- Typography --- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   color: var(--text-primary);
@@ -132,17 +139,30 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.015em;
 }
 
-h1 { font-size: clamp(2.1rem, 4vw, 3.2rem); }
-h2 { font-size: clamp(1.6rem, 2.5vw, 2.1rem); }
-h3 { font-size: clamp(1.2rem, 1.8vw, 1.45rem); }
-h4 { font-size: 1.05rem; }
+h1 {
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+}
+
+h4 {
+  font-size: 1.05rem;
+}
 
 p {
   color: var(--text-secondary);
   margin-bottom: 0.9rem;
 }
 
-p:last-child { margin-bottom: 0; }
+p:last-child {
+  margin-bottom: 0;
+}
 
 a {
   color: inherit;
@@ -163,12 +183,18 @@ a {
 .text-gradient {
   background: linear-gradient(135deg, #ffffff 30%, #38bdf8 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
-.text-cyan { color: var(--ps-cyan-bright); }
-.text-gold { color: var(--ps-gold); }
+.text-cyan {
+  color: var(--ps-cyan-bright);
+}
+
+.text-gold {
+  color: var(--ps-gold);
+}
 
 /* --- Precision Header & System Bar --- */
 .ps-system-bar {
@@ -799,7 +825,9 @@ main {
   margin-bottom: 2.25rem;
 }
 
-.timeline-item:last-child { margin-bottom: 0; }
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
 
 .timeline-dot {
   position: absolute;
@@ -992,6 +1020,7 @@ main {
   .ps-system-bar .container {
     flex-wrap: wrap;
   }
+
   .ps-nav-items {
     order: 3;
     width: 100%;
@@ -999,19 +1028,24 @@ main {
     padding-top: 0.4rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
+
   .hero-layout {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
   .highlights-grid {
     grid-template-columns: 1fr;
   }
+
   .ps-carousel-strip {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .project-layout-grid {
     grid-template-columns: 1fr;
   }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -1021,16 +1055,20 @@ main {
   .ps-system-widgets {
     display: none;
   }
+
   .ps-carousel-strip {
     grid-template-columns: 1fr;
   }
+
   .resume-header-card {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .metrics-grid {
     grid-template-columns: 1fr;
   }
+
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -1045,7 +1083,11 @@ main {
     color: #000000 !important;
   }
 
-  .ps-system-bar, .site-footer, .btn-ps, .no-print, .ps-ambient-bg {
+  .ps-system-bar,
+  .site-footer,
+  .btn-ps,
+  .no-print,
+  .ps-ambient-bg {
     display: none !important;
   }
 
@@ -1053,18 +1095,26 @@ main {
     padding: 0 !important;
   }
 
-  .card, .resume-header-card {
+  .card,
+  .resume-header-card {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: #000000 !important;
   }
 
-  p, li, .timeline-company, .timeline-date, .resume-contact-item {
+  p,
+  li,
+  .timeline-company,
+  .timeline-date,
+  .resume-contact-item {
     color: #222222 !important;
   }
 
@@ -1080,7 +1130,8 @@ main {
     background: #000000 !important;
   }
 
-  .skill-tag, .skill-tag-gold {
+  .skill-tag,
+  .skill-tag-gold {
     background: #f0f0f0 !important;
     color: #000000 !important;
     border: 1px solid #cccccc !important;
