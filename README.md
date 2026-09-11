@@ -2,21 +2,28 @@
 
 **Course**: ISDS 4125: Analysis and Design of Information Systems  
 **Instructor**: Dr. Gabriele Piccoli | LSU E.J. Ourso College of Business  
-**Live Website**: [https://taylor-benjamin.github.io/resume_website/](https://taylor-benjamin.github.io/resume_website/)  
+**Live Website**: 
 **GitHub Repository**: [https://github.com/taylor-benjamin/resume_website](https://github.com/taylor-benjamin/resume_website)
 
 ---
 
 ## Project Overview
 
-This project is a personal professional website developed using Google Antigravity IDE, semantic HTML5, and vanilla CSS. Designed with an executive PlayStation/Sony-inspired precision tech aesthetic, the website adheres to a hybrid architecture:
-- **`index.html`**: A single-page hub providing high-level overviews of my Profile (B.S. in Information Systems & Analytics with Cyber Risk Concentration at LSU), Core Competencies, Work Experience, and Contact information.
-- **`resume.html`**: A dedicated, comprehensive resume with complete career timelines, technical skills, and optimized `@media print` styling for clean PDF export.
-- **`project.html`**: An in-depth case study analyzing healthcare attack vectors and mitigation strategies from the HHS Data Breach repository using the NIST SP 800-30 framework.
-- **`styles.css`**: A shared design system featuring rigid geometric edges, responsive flex layouts, and custom CSS design tokens.
+This project is a personal professional website, built with Google Antigravity IDE, HTML5, and vanilla CSS, with a precision, PlayStation/Sony-inspired look.
+
+It's split into four files:
+- **`index.html`** – Homepage with a quick overview of my profile (IS & Analytics degree, Cyber Risk concentration, LSU), skills, work experience, and contact info.
+- **`resume.html`** – Full resume with career history and skills, formatted to print cleanly as a PDF.
+- **`project.html`** – A case study on healthcare data breaches, analyzing attack patterns from HHS breach data using the NIST SP 800-30 risk framework.
+- **`styles.css`** – Shared styles: sharp edges, flexible layouts, and reusable design variables.
 
 ---
 
 ## Learning Reflection
 
-During the development of this project, I initially encountered an issue where my Git commit would not complete and was getting stuck, while the top navigation text was spilling outside the bounding box of the header bar. I asked the agent why I couldn't commit and why the design looked overly rounded and bubbly with misaligned text. Through this troubleshooting, I learned two important technical concepts: first, that Git opens an interactive `COMMIT_EDITMSG` buffer waiting for a non-empty message if `-m` is omitted, and that file modifications must be staged with `git add` before committing. Second, I learned how rigid fixed container heights (`height: 72px`) can force flex items to overflow their parent bounds when viewport dimensions change, and how replacing bubbly border-radius values with clean, low-pixel geometric constraints (`2px` to `4px`) transforms a site from an amateur or AI-generated appearance into a sharp, executive-level enterprise interface.
+While building this project, I ran into two issues: my Git commit kept hanging, and the header's nav text was overflowing its box, with a design that looked too round and bubbly.
+
+Debugging these taught me two things:
+
+1. **Git commits**: if you skip `-m`, Git opens an interactive editor waiting for a commit message — and you also need to `git add` your changes before you can commit them.
+2. **CSS layout**: fixed heights (like `height: 72px`) can cause content to overflow when the viewport changes. Also, swapping large border-radius values for smaller ones (2–4px) makes a design look sharp and professional instead of round and "AI-generated."
